@@ -13,7 +13,7 @@ import initFetchBitcoin from './modules/fetch-bitcoin';
 const smoothScroll = new SmoothScroll('[data-menu="suave"] a[href^="#"]');
 smoothScroll.init();
 
-const accordion = new Accordion('[data-anime="accordion"] dt')
+const accordion = new Accordion('[data-anime="accordion"] dt');
 accordion.init();
 
 const tabNav = new TabNav('[data-tab="menu"] li', '[data-tab="content"] section');
