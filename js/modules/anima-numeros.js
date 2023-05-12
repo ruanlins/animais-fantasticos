@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 export default class AnimaNumeros {
   constructor(numbers, observerTarget, observerClass) {
     this.numbers = document.querySelectorAll(numbers);
