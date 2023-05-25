@@ -9,6 +9,7 @@ import MenuMobile from './modules/menu-mobile';
 import Workingdays from './modules/funcionamento';
 import fetchAnimals from './modules/fetch-animais';
 import fetchBitcoin from './modules/fetch-bitcoin';
+import { SlideNav } from './modules/slide';
 
 const smoothScroll = new SmoothScroll('[data-menu="suave"] a[href^="#"]');
 smoothScroll.init();
@@ -36,6 +37,10 @@ menuMobile.init();
 
 const funcionamento = new Workingdays('[data-semana]', 'aberto');
 funcionamento.init();
+
+const slide = new SlideNav('.slide', '.wrapper');
+slide.init();
+slide.addControl('.custom-controls');
 
 fetchAnimals('../../animaisapi.json', '.numeros-grid');
 
